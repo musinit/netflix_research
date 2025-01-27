@@ -54,3 +54,45 @@ This dataset represents the second edition of What We Watched: A Netflix Engagem
 - `Runtime` - The duration of the title (in HH:MM format for series, representing total season length). Asterisk indicates missing or
 - `Views` - The number of times the title was viewed, calculated as Hours Viewed divided by Runtime.
 
+
+## IMBd оценки
+IMDb выложили датасеты для некоммерческого использования [dataset](https://developer.imdb.com/non-commercial-datasets/). В них информация примерно об 11 млн фильмов.
+Для дополнения нашего датасета использовались:
+- `title.basics.tsv.gz` основная информация о фильме
+- `title.ratings.tsv.gz` рейтинг фильма
+- `title.crew.tsv.gz` id режиссеров и сценаристов фильмов
+- `name.basics.tsv.gz` информация о человеке (сценаристе, режиссере)
+
+К сожалению, IMDb не указали доступен ли фильм на платформе netflix, поэтому сначала были объединены датасеты целевой (500 фильмов) и дополнительный (5000 фильмов), а потом к этой таблице была добавлена информация из IMDb. Объединение таблиц проводилось по названию и году выпуска, но эти значения не уникальны (например, бывает фильм и сериал в один год с одним названием). **Все фильмы, для которых возникла неоднозначность, были удалены.**
+
+Полученный датасет назвается `netflix_movies_with_imdb.tsv` и содержит столбцы:
+- `title` название фильма
+- `release_year` год выпуска
+- `rating_small`возрастной рейтинг из маленького целевого датасета
+- `user_rating_score` пользовательская оценка из маленького датасета
+- `dataset_small` имеет значение small, если фильм с таким названием и годом выпуска есть в маленьком датасете
+- `rating_big` возрастной рейтинг из большого датасета
+- `type` тип видео из большого датасета
+- `dataset_big` имеет значение big, если фильм с таким названием и годом выпуска есть большом датасете
+- `director` режиссер из большого датасета
+- `score_available` true или false, есть ли пользовательская оценка из маленького датасета
+- `dataset` small -только в маленьком датасете, big только в большом, smallbig  в обоих
+- `tconst` id фильма в imdb 
+- `titleType` тип видео, imdb
+- `primaryTitle` название фильма, imdb
+- `originalTitle` название фильма на оригинальном языке, imdb
+- `isAdult` 0 или 1, imdb
+- `startYear` год выпуска, imdb
+- `endYear` дата окончания, если применимо, imdb
+- `runtimeMinutes` primary runtime of the title, in minutes, imdb
+- `genres`  includes up to three genres associated with the title, imdb
+- `averageRating` weighted average of all the individual user ratings, imdb
+- `numVotes` number of votes the title has received, imdb
+- `directors` director(s) of the given title, imdb
+- `writers`  writer(s) of the given title, imdb
+- `nconst` id режиссера в imdb
+- `primaryName` имя режиссера, name by which the person is most often credited
+- `birthYear` год рождения режиссера
+- `deathYear` год смерти режиссера
+- `primaryProfession` the top-3 professions of the person (режиссера)
+- `knownForTitles` список id фильмов в базе imdb известных работ режиссера
