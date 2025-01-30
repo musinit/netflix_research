@@ -13,3 +13,6 @@ Tutorial по работе с VSCode + jupiter: https://code.visualstudio.com/do
 <br>
 Референс: EDA занятие: https://colab.research.google.com/drive/1aqelxwiUMAx51pPChMkmix-rbYqcfn3c?usp=sharing <br>
 
+
+Презентация<br>
+https://docs.google.com/presentation/d/1F3qeTUeHTe7bLKdxOwyKGXOyxeRd_ru9/edit?usp=sharing&ouid=112143014839736398757&rtpof=true&sd=true
