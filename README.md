@@ -1,9 +1,17 @@
 ## Тестовый проект команды FlexML на анализ датасета Netflix
 
-Создать окружение:
+
+## Getting started
 ```
-    python3 -m venv env
-    source env/bin/activate
+    1. скачать 4 датасета с https://datasets.imdbws.com/
+    /assets/title.basics.tsv.gz
+    /assets/title.crew.tsv.gz
+    /assets/title.ratings.tsv.gz
+    /assets/name.basics.tsv.gz
+
+    2. python3 -m venv env
+    3. source env/bin/activate
+    4. pip3 install -r requirements.txt
 ```
 
 Tutorial по работе с VSCode + jupiter: https://code.visualstudio.com/docs/datascience/jupyter-notebooks <br>
