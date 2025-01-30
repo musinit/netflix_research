@@ -5,10 +5,7 @@
 ```
     1. python3 -m venv env
     2. source env/bin/activate
-<<<<<<< HEAD
     3. pip3 install -r requirements.txt
-=======
->>>>>>> a4dbb016905a668a020e0864e0c8c82bbdb6bedb
 ```
 
 Tutorial по работе с VSCode + jupiter: https://code.visualstudio.com/docs/datascience/jupyter-notebooks <br>
