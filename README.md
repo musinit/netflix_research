@@ -3,9 +3,15 @@
 
 ## Getting started
 ```
-    1. python3 -m venv env
-    2. source env/bin/activate
-    3. pip3 install -r requirements.txt
+    1. скачать 4 датасета с https://datasets.imdbws.com/
+    /assets/title.basics.tsv.gz
+    /assets/title.crew.tsv.gz
+    /assets/title.ratings.tsv.gz
+    /assets/name.basics.tsv.gz
+
+    2. python3 -m venv env
+    3. source env/bin/activate
+    4. pip3 install -r requirements.txt
 ```
 
 Tutorial по работе с VSCode + jupiter: https://code.visualstudio.com/docs/datascience/jupyter-notebooks <br>
