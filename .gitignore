@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 /env
-=======
 .vscode
->>>>>>> a4dbb016905a668a020e0864e0c8c82bbdb6bedb
+/assets/title.basics.tsv.gz
+/assets/title.crew.tsv.gz
+/assets/title.ratings.tsv.gz
+/assets/name.basics.tsv.gz
