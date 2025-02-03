@@ -1,4 +1,5 @@
 /env
+.env
 .vscode
 /assets/title.basics.tsv.gz
 /assets/title.crew.tsv.gz

@@ -12,6 +12,7 @@
     2. python3 -m venv env
     3. source env/bin/activate
     4. pip3 install -r requirements.txt
+    5. создать .env и положить туда X-API-KEY для работы с Кинопоиск API
 ```
 
 Tutorial по работе с VSCode + jupiter: https://code.visualstudio.com/docs/datascience/jupyter-notebooks <br>
